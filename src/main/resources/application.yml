@@ -6,6 +6,11 @@ server:
 spring:
   application:
     name: user-service
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/jandb
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: jandb
+    password: jandb
 
 logging:
   config: classpath:log/logback-spring.xml
